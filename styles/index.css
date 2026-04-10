@@ -1,31 +1,31 @@
 /* index.css */
-#wrap header #hero_bnr {}
-#wrap header #hero_bnr .heroswiper {}
-#wrap header #hero_bnr .heroswiper .swiper-wrapper {}
-#wrap header #hero_bnr .heroswiper .swiper-wrapper .swiper-slide {
+#wrap main #hero_bnr {}
+#wrap main #hero_bnr .heroswiper {}
+#wrap main #hero_bnr .heroswiper .swiper-wrapper {}
+#wrap main #hero_bnr .heroswiper .swiper-wrapper .swiper-slide {
     width: 100%;
     height: 960px;
 }
-#wrap header #hero_bnr .heroswiper .swiper-wrapper .slide1 {
+#wrap main #hero_bnr .heroswiper .swiper-wrapper .slide1 {
     background-image: url(../img/herobnr-1.jpg);
     background-size:cover;
     background-position: center;
 }
-#wrap header #hero_bnr .heroswiper .swiper-wrapper .slide2 {}
-#wrap header #hero_bnr .heroswiper .swiper-wrapper .slide3 {}
-#wrap header #hero_bnr .heroswiper .pagi_bar {
+#wrap main #hero_bnr .heroswiper .swiper-wrapper .slide2 {}
+#wrap main #hero_bnr .heroswiper .swiper-wrapper .slide3 {}
+#wrap main #hero_bnr .heroswiper .pagi_bar {
     background-color:hsl(0, 100%, 50%);
     width: 20px; height: 50px;
 }
-#wrap header #hero_bnr .heroswiper .pagi_bar .pg {
+#wrap main #hero_bnr .heroswiper .pagi_bar .pg {
     background-color: turquoise;
     width: 20px; height: 50px;
 }
-#wrap header #hero_bnr .heroswiper .pagi_bar .bg {
+#wrap main #hero_bnr .heroswiper .pagi_bar .bg {
     background-color: yellow;
     width: 20px; height: 50px;
 }
-#wrap header #hero_bnr .heroswiper .pagi_bar .bg .bar {
+#wrap main #hero_bnr .heroswiper .pagi_bar .bg .bar {
     background-color: violet;
     width: 20px; height: 50px;
 }
