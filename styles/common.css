@@ -108,15 +108,17 @@
 #wrap header .top_bnr .bnr_right a:nth-child(2) {width: 20px; height: 18px;}
 #wrap header .top_bnr .bnr_right a:nth-child(3) {width: 17px; height: 17px;}
 #wrap header .top_bnr .bnr_right a:nth-child(4) {width: 19px; height: 19px;}
-#wrap header .top_bnr .bnr_right a:nth-child(5) {}
+#wrap header .top_bnr .bnr_right a:nth-child(5) {line-height: 1.2;}
 #wrap header .top_bnr .bnr_right a img {width: 100%;}
 /* -------------------------------------------------메인~섹션별 설정 */
+#wrap main {}
 #wrap main .section {
     margin: 0 auto;
-    padding: 100px 0;
-    width: 1420px;
+    padding: 100px 250px;
+    width: 100%;
 }
 #wrap main .section .title {
+    width: 100%;
     display: flex; flex-flow: row nowrap;
     justify-content: space-between; align-items:flex-end;
     padding-bottom: 25px;

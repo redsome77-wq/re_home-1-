@@ -104,20 +104,21 @@
             <div class="sub_bg"></div><!-- 서브가 나타날때 함께 나타나는 배경 -->
         </header>
         <main>
-            <div class="salewrap">
-                <div class="sale_img">
-                    <div class="mainimg">
-                        <div class="sub"><a href=""><img src="" alt=""></a></div>
-                        <div class="sub"><a href=""><img src="" alt=""></a></div>
-                        <div class="sub"><a href=""><img src="" alt=""></a></div>
-                    </div>
+            <div id="salewrap">
+                <div class="sale_imgzone">
+                    <a href="#" class="main_img"><img src="./img/sub/main_01.png" alt=""></a>
+                    <ul class="sub_imgzone">
+                        <li><a href="#"><img src="./img/sub/main_02.png" alt=""></a></li>
+                        <li><a href="#"><img src="./img/sub/main_03.png" alt=""></a></li>
+                        <li><a href="#"><img src="./img/sub/main_04.png" alt=""></a></li>
+                    </ul>
                 </div>
                 <div class="sale_info">
                     <p class="p_cate">키즈 > 수트&드레스</p>
                     <div class="prod_info">
                         <div class="p_name_link">
                             <p>로즈 스트라이프 요꼬 카라 프릴 원피스</p>
-                            <img src="" alt="공유하기">
+                            <a href="#" class="share_link"><img src="./img/sub/shr.png" alt="공유하기"></a>
                         </div>
                         <p class="p_price">₩63,000</p>
                     </div>
@@ -126,17 +127,17 @@
                             <div class="color">
                                 <p>색상</p>
                                 <ul class="color_btn">
-                                    <li>Pink</li>
-                                    <li>White</li>
+                                    <li><button type="button">Pink</button></li>
+                                    <li><button type="button" class="active">White</button></li>
                                 </ul>
                             </div>
                             <div class="size">
                                 <p>사이즈</p>
                                 <ul class="size_btn">
-                                    <li>100</li>
-                                    <li>110</li>
-                                    <li>120</li>
-                                    <li>130</li>
+                                    <li><button type="button">100</button></li>
+                                    <li><button type="button">110</button></li>
+                                    <li><button type="button">120</button></li>
+                                    <li><button type="button" class="active">130</button></li>
                                 </ul>
                             </div>
                         </div>
@@ -144,9 +145,9 @@
                             <div class="select_grey">
                                 <p>[로즈 스트라이프 요꼬 카라 프릴 원피스] - <em>사이즈 130 , 컬러 WHITE</em></p>
                                 <div class="select_box">
-                                    <input type="button" value="">
+                                    <button type="button"><img src="" alt=""></button>
                                     <p>1</p>
-                                    <input type="button" value="">
+                                    <button type="button"><img src="" alt=""></button>
                                 </div>
                             </div>
                             <div class="select_sum">
@@ -173,25 +174,25 @@
                     <li>Q&A</li>
                 </ul>
             </nav>
-            <div class="p_long_img">
+            <div id="p_long_img">
                 <img src="" alt="">
                 <img src="" alt="">
             </div>
-            <div class="review sub_wrap">
+            <div class="sub_wrap" id="review">
                 <div class="sub_part">
                     <div class="title">
                         <h1>REVIEW</h1>
                         <p>상품후기</p>
                     </div>
-                    <div class="content">
+                    <div class="contents">
                         <ul class="r_list"> <!-- 리뷰샘플 -->
                             <li>
-                                <img src="" alt="구매상품">
+                                <a href="#" class="rev_more"><img src="./img/sub/rev.png" alt="구매상품"></a>
                                 <div class="rev_cont">
                                     <div class="rev">
                                         <p>
                                             <em>재입고 기다립니다</em>
-                                            <img src="" alt="별점">
+                                            <img src="./img/sub/star.png" alt="별점">
                                             <span>(5.0)</span>
                                         </p>
                                     </div>
@@ -199,12 +200,12 @@
                                 </div>
                             </li>
                             <li>
-                                <img src="" alt="구매상품">
+                                <a href="#" class="rev_more"><img src="./img/sub/rev.png" alt="구매상품"></a>
                                 <div class="rev_cont">
                                     <div class="rev">
                                         <p>
                                             <em>재입고 기다립니다</em>
-                                            <img src="" alt="별점">
+                                            <img src="./img/sub/star.png" alt="별점">
                                             <span>(5.0)</span>
                                         </p>
                                     </div>
@@ -212,12 +213,12 @@
                                 </div>
                             </li>
                             <li>
-                                <img src="" alt="구매상품">
+                                <a href="#" class="rev_more"><img src="./img/sub/rev.png" alt="구매상품"></a>
                                 <div class="rev_cont">
                                     <div class="rev">
                                         <p>
                                             <em>재입고 기다립니다</em>
-                                            <img src="" alt="별점">
+                                            <img src="./img/sub/star.png" alt="별점">
                                             <span>(5.0)</span>
                                         </p>
                                     </div>
@@ -225,12 +226,12 @@
                                 </div>
                             </li>
                             <li>
-                                <img src="" alt="구매상품">
+                                <a href="#" class="rev_more"><img src="./img/sub/rev.png" alt="구매상품"></a>
                                 <div class="rev_cont">
                                     <div class="rev">
                                         <p>
                                             <em>재입고 기다립니다</em>
-                                            <img src="" alt="별점">
+                                            <img src="./img/sub/star.png" alt="별점">
                                             <span>(5.0)</span>
                                         </p>
                                     </div>
@@ -241,13 +242,13 @@
                     </div>
                 </div>
             </div>
-            <div class="qna sub_wrap">
+            <div class="sub_wrap" id="qna">
                 <div class="sub_part">
                     <div class="title">
                         <h1>Q&A</h1>
                         <p>상품문의</p>
                     </div>
-                    <div class="content">
+                    <div class="contents">
                         <dl class="qna_table">
                             <dt>
                                 <ul class="qna_dt">
@@ -259,14 +260,30 @@
                             </dt>
                             <dd>
                                 <ul class="qna_dd">
-                                    <li>답변여부</li>
-                                    <li>문의사항</li>
-                                    <li>작성자</li>
-                                    <li>작성일</li>
+                                    <li>답변완료</li>
+                                    <li>문의제목</li>
+                                    <li>asjds****</li>
+                                    <li>2026/04/01</li>
+                                </ul>
+                            </dd>
+                            <dd>
+                                <ul class="qna_dd">
+                                    <li>답변완료</li>
+                                    <li>문의제목</li>
+                                    <li>asjds****</li>
+                                    <li>2026/04/01</li>
+                                </ul>
+                            </dd>
+                            <dd>
+                                <ul class="qna_dd">
+                                    <li>답변완료</li>
+                                    <li>문의제목</li>
+                                    <li>asjds****</li>
+                                    <li>2026/04/01</li>
                                 </ul>
                             </dd>
                         </dl>
-                        <button type="button" class="write_btn">문의하기</button>
+                        <button type="button" id="write_btn">문의하기</button>
                     </div>
                 </div>
             </div>

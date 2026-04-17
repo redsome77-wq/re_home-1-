@@ -2,6 +2,7 @@
 #wrap main #hero_bnr {}
 #wrap main #hero_bnr .heroswiper {
     position: relative;
+    width: 100%; height: max-content;
 }
 #wrap main #hero_bnr .heroswiper .swiper-wrapper {}
 #wrap main #hero_bnr .heroswiper .swiper-wrapper .swiper-slide {
@@ -22,7 +23,9 @@
 #wrap main #hero_bnr .heroswiper .swiper-scrollbar {
     background-color: rgba(226, 226, 226, 0.55);
     height: 1px; width: 1048px;
-    position: absolute; bottom: 66px; left: 436px;
+    position: absolute;
+    left: 50%; bottom: 66px;
+    transform: translateX(-50%);
 }
 #wrap main #hero_bnr .heroswiper .swiper-scrollbar .swiper-scrollbar-drag {
     background-color: #fff;
@@ -39,12 +42,14 @@
 #wrap main #new_product .title .more_btn u {}
 #wrap main #new_product .container {}
 #wrap main #new_product .container .product_new {
+    width:100%;
     display: flex; flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content:space-between;
     gap:8px;
 }
 #wrap main #new_product .container .product_new li {
-    width: 319px;
+    max-width:319px;
+    margin-top: 30px;
 }
 #wrap main #new_product .container .product_new li .p_img {
     position: relative;
@@ -57,7 +62,9 @@
     width: 24px; height: 19.95px;
 }
 #wrap main #new_product .container .product_new li .p_img .wish_btn img {width: 100%;}
-#wrap main #new_product .container .product_new li .p_info {}
+#wrap main #new_product .container .product_new li .p_info {
+    display: flex; flex-flow: column nowrap; gap: 3px;
+}
 #wrap main #new_product .container .product_new li .p_info p {
     font-size: 1.0rem;
     font-weight: 300;
@@ -85,22 +92,28 @@
 }
 #wrap main #insta .container .r_logo img {width: 70%;}
 #wrap main #insta .container .insta_right {
-    display: flex; flex-flow: column nowrap; gap: 10px;
+    width: 845px;
+    display: flex; flex-flow: row wrap; gap: 10px;
 }
-#wrap main #insta .container .insta_right .insta_right_1,
-#wrap main #insta .container .insta_right .insta_right_2 {
-    display: flex; flex-flow: row nowrap; gap: 10px;
+#wrap main #insta .container .insta_right a {
+    position: relative;
+    width: 275px; height: 275px;
 }
-#wrap main #insta .container .insta_right .insta_right_1 a,
-#wrap main #insta .container .insta_right .insta_right_2 a {
-    width: 270px; height: 270px;
+#wrap main #insta .container .insta_right a:hover {
+    border: #E72819 solid 4px;
+    transition: all 0.1s;
 }
-#wrap main #insta .container .insta_right .insta_right_1 {}
-#wrap main #insta .container .insta_right .insta_right_1 a {}
-#wrap main #insta .container .insta_right .insta_right_1 a img {width: 100%;}
-#wrap main #insta .container .insta_right .insta_right_2 {}
-#wrap main #insta .container .insta_right .insta_right_2 a {}
-#wrap main #insta .container .insta_right .insta_right_2 a img {width: 100%;}
+#wrap main #insta .container .insta_right a:hover .ins_hum {
+    display: none;
+}
+#wrap main #insta .container .insta_right a .ins_hum {
+    position: absolute; z-index: 999;
+    display: flex;
+}
+#wrap main #insta .container .insta_right a .ins_ac {
+    position: absolute;  z-index: 1;
+}
+#wrap main #insta .container .insta_right a img {width: 100%;}
 #wrap main #members_bnr {}
 #wrap main #members_bnr a {
     display: flex; flex-flow: row nowrap;
@@ -111,7 +124,7 @@
     background-position: center;
     gap:31px;
 }
-#wrap main #members_bnr a img {width: max-content; height: 48px;}
+#wrap main #members_bnr a img {width:max-content; height: 48px;}
 #wrap main #members_bnr a .m_line {
     background-color: #fff;
     width:1px; height: 8px;}
@@ -147,8 +160,9 @@
     display: none;
 }
 #wrap main #collabo .container .tab_contents .peanuts {
+    width: 100%;
     display: flex;  flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: space-between; gap:10px;
 }
 #wrap main #collabo .container .tab_contents .peanuts * a {
     background-size: cover;
@@ -159,8 +173,10 @@
 }
 #wrap main #collabo .container .tab_contents .peanuts .collabo_mainlink a {}
 #wrap main #collabo .container .tab_contents .peanuts .card_imgs {
+    width: max-content;
     display: flex; flex-flow: column nowrap;
     justify-content: space-between;
+    gap:10px;
 }
 #wrap main #collabo .container .tab_contents .peanuts .card_imgs a {
     width: 502px; height: 246px;
@@ -193,12 +209,11 @@
 #wrap main #lookbook .container {}
 #wrap main #lookbook .container .bigbdle {}
 #wrap main #lookbook .container .bigbdle .pnum {
-    position: relative; bottom: 50px;
-    left: 43%;
+    position: relative; bottom: 50px; left: 43%;
 }
 #wrap main #lookbook .container .bigbdle .pnum .page {
-    position: relative; top: 0;
-    width: max-content;
+    width: max-content; left:20.3px; bottom: 5px;
+    font-size: 0.85rem;
 }
 #wrap main #lookbook .container .bigbdle .pnum .page .swiper-pagination-current {
     font-weight: 600;
@@ -207,7 +222,7 @@
 #wrap main #lookbook .container .bigbdle .pnum .prev {
     width: max-content; height: max-content;
     color: #000;
-    transform: scale(0.7);
+    transform: scale(0.8);
 }
 #wrap main #lookbook .container .bigbdle .pnum .next {
     left: 50px;

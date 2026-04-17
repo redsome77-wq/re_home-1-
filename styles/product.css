@@ -1,0 +1,103 @@
+/* product.css */
+#wrap main #salewrap {
+    max-width: 1620px;
+}
+#wrap main #salewrap .sale_imgzone {
+    display: flex; flex-flow: column nowrap;
+    justify-content: center; align-items: center; gap:22px;
+}
+#wrap main #salewrap .sale_imgzone .main_img {
+    width: 924px;
+}
+#wrap main #salewrap .sale_imgzone .main_img img {width:100%;}
+#wrap main #salewrap .sale_imgzone .sub_imgzone {
+    display: flex; flex-flow: row nowrap;
+    justify-content:space-between; align-items: center;
+}
+#wrap main #salewrap .sale_imgzone .sub_imgzone li {}
+#wrap main #salewrap .sale_imgzone .sub_imgzone li a {
+    width: 293px;
+}
+#wrap main #salewrap .sale_imgzone .sub_imgzone li a img {width:100%;}
+#wrap main #salewrap .sale_info {
+    width: 656px;
+}
+#wrap main #salewrap .sale_info .p_cate {
+    font-size: 0.81rem; font-weight: 200;
+}
+#wrap main #salewrap .sale_info .prod_info {}
+#wrap main #salewrap .sale_info .prod_info .p_name_link {}
+#wrap main #salewrap .sale_info .prod_info .p_name_link p {
+    font-size: 1.25rem;
+}
+#wrap main #salewrap .sale_info .prod_info .p_name_link .share_link {}
+#wrap main #salewrap .sale_info .prod_info .p_name_link .share_link img {width:100%;}
+#wrap main #salewrap .sale_info .prod_info .p_price {}
+#wrap main #salewrap .sale_info .opt_zone {}
+#wrap main #salewrap .sale_info .opt_zone .color_size {}
+#wrap main #salewrap .sale_info .opt_zone .color_size .color {}
+#wrap main #salewrap .sale_info .opt_zone .color_size .color p {}
+#wrap main #salewrap .sale_info .opt_zone .color_size .color .color_btn {}
+#wrap main #salewrap .sale_info .opt_zone .color_size .color .color_btn li {}
+#wrap main #salewrap .sale_info .opt_zone .color_size .color .color_btn li button {}
+#wrap main #salewrap .sale_info .opt_zone .color_size .color .color_btn li button.active {}
+#wrap main #salewrap .sale_info .opt_zone .color_size .size {}
+#wrap main #salewrap .sale_info .opt_zone .color_size .size p {}
+#wrap main #salewrap .sale_info .opt_zone .color_size .size .size_btn {}
+#wrap main #salewrap .sale_info .opt_zone .color_size .size .size_btn li {}
+#wrap main #salewrap .sale_info .opt_zone .color_size .size .size_btn li button {}
+#wrap main #salewrap .sale_info .opt_zone .color_size .size .size_btn li button.active {}
+#wrap main #salewrap .sale_info .opt_zone .select {}
+#wrap main #salewrap .sale_info .opt_zone .select .select_grey {}
+#wrap main #salewrap .sale_info .opt_zone .select .select_grey p {}
+#wrap main #salewrap .sale_info .opt_zone .select .select_grey p em {}
+#wrap main #salewrap .sale_info .opt_zone .select .select_grey .select_box {}
+#wrap main #salewrap .sale_info .opt_zone .select .select_grey .select_box button {}
+#wrap main #salewrap .sale_info .opt_zone .select .select_grey .select_box button img {width:100%;}
+#wrap main #salewrap .sale_info .opt_zone .select .select_grey .select_box p {}
+#wrap main #salewrap .sale_info .opt_zone .select .select_sum {}
+#wrap main #salewrap .sale_info .opt_zone .select .select_sum p {}
+#wrap main #salewrap .sale_info .opt_zone .select .select_sum .price_sum {}
+#wrap main #salewrap .sale_info .opt_zone .btn_wrap {}
+#wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row {}
+#wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row .wish {}
+#wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row .wish img {width:100%;}
+#wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row .cart_buy {}
+#wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row .cart_buy .cart {}
+#wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row .cart_buy .buy {}
+#wrap main nav {}
+#wrap main nav .p_info {}
+#wrap main nav .p_info li {}
+#wrap main #p_long_img {}
+#wrap main #p_long_img img {width:100%;}
+#wrap main .sub_wrap {}
+#wrap main #review {}
+#wrap main #review .sub_part {}
+#wrap main #review .sub_part .title {}
+#wrap main #review .sub_part .title h1 {}
+#wrap main #review .sub_part .title p {}
+#wrap main #review .sub_part .contents {}
+#wrap main #review .sub_part .contents .r_list {}
+#wrap main #review .sub_part .contents .r_list li {}
+#wrap main #review .sub_part .contents .r_list li .rev_more {}
+#wrap main #review .sub_part .contents .r_list li .rev_more img {width:100%;}
+#wrap main #review .sub_part .contents .r_list li .rev_cont {}
+#wrap main #review .sub_part .contents .r_list li .rev_cont .rev {}
+#wrap main #review .sub_part .contents .r_list li .rev_cont .rev p {}
+#wrap main #review .sub_part .contents .r_list li .rev_cont .rev p em {}
+#wrap main #review .sub_part .contents .r_list li .rev_cont .rev p img {width:100%;}
+#wrap main #review .sub_part .contents .r_list li .rev_cont .rev p span {}
+#wrap main #review .sub_part .contents .r_list li .rev_cont .rev_optin {}
+#wrap main #qna .sub_part {}
+#wrap main #qna .sub_part .title {}
+#wrap main #qna .sub_part .title h1 {}
+#wrap main #qna .sub_part .title p {}
+#wrap main #qna .sub_part .contents {}
+#wrap main #qna .sub_part .contents .qna_table {}
+#wrap main #qna .sub_part .contents .qna_table dt {}
+#wrap main #qna .sub_part .contents .qna_table dt .qna_dt {}
+#wrap main #qna .sub_part .contents .qna_table dt .qna_dt li {}
+#wrap main #qna .sub_part .contents .qna_table dd {}
+#wrap main #qna .sub_part .contents .qna_table dd .qna_dd {}
+#wrap main #qna .sub_part .contents .qna_table dd .qna_dd li {}
+#wrap main #qna .sub_part .contents #write_btn {}

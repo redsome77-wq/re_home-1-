@@ -2,6 +2,7 @@ const heroBnr = document.querySelector ('.heroswiper');
 const lookbookBig = document.querySelector ('.bigbdle');
 const lookbookZone = document.querySelectorAll ('.right_wrap .lb_swiper');
 const brandZone = document.querySelector ('.brandcard');
+const wishBtn = document.querySelector('.wish_btn img')
 
 const heroSwiper = new Swiper(heroBnr, {
     loop:true,
