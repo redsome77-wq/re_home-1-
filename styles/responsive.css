@@ -274,8 +274,11 @@
         font-size: 0.5rem;
     }
 /* -------------------------------------------------3.collabo */
+    #wrap main #collabo .container .tab_title {
+        margin-bottom: 15px;
+    }
     #wrap main #collabo .container .tab_title a {
-        font-size: 0.94rem; 
+        font-size: 0.69rem; 
     }
     #wrap main #collabo .container .tab_contents .contents {
         flex-flow: column nowrap; gap:5px;
@@ -312,6 +315,7 @@
     #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .lbmain {
         width: 372px; height: 511px;
         background-image: url(../img/looks/look_main_t.jpg);
+        margin-bottom: 5px;
     }
     #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .slide_title h2 {
         font-size: 0.88rem;
@@ -320,7 +324,7 @@
         font-size: 1.0rem;
     }
     #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .slide_title {
-        margin-bottom: 5px;
+        margin-bottom: 0px;
     }
     #wrap main #lookbook .container .bigbdle .pnum {
         left: 42%; bottom:0;
