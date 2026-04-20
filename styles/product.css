@@ -1,22 +1,28 @@
 /* product.css */
 #wrap main #salewrap {
-    max-width: 1620px;
+    width: 100%;
+    display: flex; flex-flow: row nowrap; gap:40px;
+    justify-content: space-between; align-items:start;
 }
 #wrap main #salewrap .sale_imgzone {
+    width: 100%;
     display: flex; flex-flow: column nowrap;
     justify-content: center; align-items: center; gap:22px;
 }
 #wrap main #salewrap .sale_imgzone .main_img {
-    width: 924px;
+    display: block;
+    width: 100%;
 }
 #wrap main #salewrap .sale_imgzone .main_img img {width:100%;}
 #wrap main #salewrap .sale_imgzone .sub_imgzone {
+    width: 100%; gap:22px;
     display: flex; flex-flow: row nowrap;
     justify-content:space-between; align-items: center;
 }
 #wrap main #salewrap .sale_imgzone .sub_imgzone li {}
 #wrap main #salewrap .sale_imgzone .sub_imgzone li a {
-    width: 293px;
+    display: block;
+    width: 100%;
 }
 #wrap main #salewrap .sale_imgzone .sub_imgzone li a img {width:100%;}
 #wrap main #salewrap .sale_info {
@@ -25,79 +31,237 @@
 #wrap main #salewrap .sale_info .p_cate {
     font-size: 0.81rem; font-weight: 200;
 }
-#wrap main #salewrap .sale_info .prod_info {}
-#wrap main #salewrap .sale_info .prod_info .p_name_link {}
+#wrap main #salewrap .sale_info .prod_info {
+    margin-top: 48px;
+}
+#wrap main #salewrap .sale_info .prod_info .p_name_link {
+    display: flex; flex-flow: row; gap: 15px;
+    align-items: center;
+}
 #wrap main #salewrap .sale_info .prod_info .p_name_link p {
     font-size: 1.25rem;
 }
-#wrap main #salewrap .sale_info .prod_info .p_name_link .share_link {}
+#wrap main #salewrap .sale_info .prod_info .p_name_link .share_link {
+    display: inline-block;
+    width: 15px;
+}
 #wrap main #salewrap .sale_info .prod_info .p_name_link .share_link img {width:100%;}
-#wrap main #salewrap .sale_info .prod_info .p_price {}
-#wrap main #salewrap .sale_info .opt_zone {}
+#wrap main #salewrap .sale_info .prod_info .p_price {
+    margin-top: 10px;
+    font-size: 1.25rem; font-weight: 500;
+}
+#wrap main #salewrap .sale_info .opt_zone {
+    margin-top: 134px;
+}
 #wrap main #salewrap .sale_info .opt_zone .color_size {}
+#wrap main #salewrap .sale_info .opt_zone .color_size .opt {
+    display: flex; flex-flow: column nowrap; gap:20px;
+}
+#wrap main #salewrap .sale_info .opt_zone .color_size .opt .btn_ul {
+    display: flex; flex-flow: row nowrap; gap:23px;
+}
+#wrap main #salewrap .sale_info .opt_zone .color_size .opt .btn_ul li {}
+#wrap main #salewrap .sale_info .opt_zone .color_size .opt .btn_ul li button {
+    font-size: 0.81rem; font-weight: 600;
+    width: 120px; height: 44px;
+    border: #444 solid 0.3px; border-radius: 6px;
+    background-color: #fff;
+    color: #000;
+}
+#wrap main #salewrap .sale_info .opt_zone .color_size .opt .btn_ul li button.active {
+    font-size: 0.81rem; font-weight: 600;
+    width: 120px; height: 44px;
+    border-radius: 6px;
+    border: none; 
+    background-color: #E72819;
+    color: #fff;
+}
 #wrap main #salewrap .sale_info .opt_zone .color_size .color {}
 #wrap main #salewrap .sale_info .opt_zone .color_size .color p {}
 #wrap main #salewrap .sale_info .opt_zone .color_size .color .color_btn {}
 #wrap main #salewrap .sale_info .opt_zone .color_size .color .color_btn li {}
 #wrap main #salewrap .sale_info .opt_zone .color_size .color .color_btn li button {}
 #wrap main #salewrap .sale_info .opt_zone .color_size .color .color_btn li button.active {}
-#wrap main #salewrap .sale_info .opt_zone .color_size .size {}
+#wrap main #salewrap .sale_info .opt_zone .color_size .size {
+    margin-top: 42px;
+}
 #wrap main #salewrap .sale_info .opt_zone .color_size .size p {}
 #wrap main #salewrap .sale_info .opt_zone .color_size .size .size_btn {}
 #wrap main #salewrap .sale_info .opt_zone .color_size .size .size_btn li {}
 #wrap main #salewrap .sale_info .opt_zone .color_size .size .size_btn li button {}
 #wrap main #salewrap .sale_info .opt_zone .color_size .size .size_btn li button.active {}
-#wrap main #salewrap .sale_info .opt_zone .select {}
-#wrap main #salewrap .sale_info .opt_zone .select .select_grey {}
-#wrap main #salewrap .sale_info .opt_zone .select .select_grey p {}
-#wrap main #salewrap .sale_info .opt_zone .select .select_grey p em {}
-#wrap main #salewrap .sale_info .opt_zone .select .select_grey .select_box {}
+#wrap main #salewrap .sale_info .opt_zone .select {
+    margin-top: 160px;
+}
+#wrap main #salewrap .sale_info .opt_zone .select .select_grey {
+    background-color: #FCFCFC;
+    padding: 20px 20px;
+    width: 100%;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between; align-items: center;
+}
+#wrap main #salewrap .sale_info .opt_zone .select .select_grey p {
+    font-weight: 300;
+}
+#wrap main #salewrap .sale_info .opt_zone .select .select_grey p em {
+    font-weight: 600;
+}
+#wrap main #salewrap .sale_info .opt_zone .select .select_grey .select_box {
+    display: flex; flex-flow: row nowrap; gap:16px;
+}
 #wrap main #salewrap .sale_info .opt_zone .select .select_grey .select_box button {}
 #wrap main #salewrap .sale_info .opt_zone .select .select_grey .select_box button img {width:100%;}
-#wrap main #salewrap .sale_info .opt_zone .select .select_grey .select_box p {}
-#wrap main #salewrap .sale_info .opt_zone .select .select_sum {}
+#wrap main #salewrap .sale_info .opt_zone .select .select_grey .select_box p {
+    font-size: 0.81rem; font-weight:600;
+}
+#wrap main #salewrap .sale_info .opt_zone .select .select_sum {
+    font-size: 1.06rem;
+    display: flex; flex-flow: row nowrap; gap:33px;
+    align-items: center; justify-content: right;
+    margin-top: 14px;
+}
 #wrap main #salewrap .sale_info .opt_zone .select .select_sum p {}
-#wrap main #salewrap .sale_info .opt_zone .select .select_sum .price_sum {}
-#wrap main #salewrap .sale_info .opt_zone .btn_wrap {}
-#wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row {}
-#wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row .wish {}
-#wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row .wish img {width:100%;}
-#wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row .cart_buy {}
-#wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row .cart_buy .cart {}
-#wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row .cart_buy .buy {}
+#wrap main #salewrap .sale_info .opt_zone .select .select_sum .price_sum {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+#wrap main #salewrap .sale_info .opt_zone .btn_wrap {
+    margin-top: 50px;
+    width: 100%;
+    padding-top: 30px;
+    border-top: #444 solid 1px;
+}
+#wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row {
+    display: flex; flex-flow: row nowrap; gap:8px;
+}
+#wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row .wish {
+    width: 62px; height: 62px;
+    border: #444 solid 0.3px; border-radius: 6px;
+    background-color: #fff;
+    color: #000;
+}
+#wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row .wish img {width:28px;}
+#wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row .cart_buy {
+    display: flex; flex-flow: row nowrap; gap:8px;
+}
+#wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row .cart_buy .cart {
+    width: 256px; height: 62px;
+    border: #444 solid 0.3px; border-radius: 6px;
+    background-color: #fff;
+    color: #000;
+}
+#wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row .cart_buy .buy {
+    width: 322px; height: 62px;
+    border-radius: 6px;
+    border: none; 
+    background-color: #E72819;
+    color: #fff;
+}
 #wrap main nav {}
-#wrap main nav .p_info {}
+#wrap main nav .p_info {
+    width: 100%; height: 76px;
+    display: flex; flex-flow: row nowrap; gap: 425px;
+    justify-content: center; align-items: center;
+    border-bottom: #444 solid 0.5px;
+    margin: 100px 0;
+}
 #wrap main nav .p_info li {}
-#wrap main #p_long_img {}
+#wrap main nav .p_info li a {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    font-size: 1.5rem; font-weight: 500;
+}
+#wrap main nav .p_info li .active {
+    color: #E72819; border-bottom: #E72819 solid 4px;
+}
+#wrap main #p_long_img {
+    margin: 0 auto;
+    width: 1046px;
+    padding: 100px 0;
+}
 #wrap main #p_long_img img {width:100%;}
-#wrap main .sub_wrap {}
+#wrap main .sub_wrap {
+    padding: 100px 150px;
+}
+
+#wrap main .sub_wrap .sub_part .title {
+    display: flex; flex-flow: row nowrap; gap: 8px;
+    align-items: end;
+}
+#wrap main .sub_wrap .sub_part .title h1 {
+    font-size: 1.38rem; font-weight: 600;
+}
+#wrap main .sub_wrap .sub_part .title p {line-height: 1.0;}
+#wrap main .sub_wrap .sub_part .contents {}
+
 #wrap main #review {}
 #wrap main #review .sub_part {}
-#wrap main #review .sub_part .title {}
-#wrap main #review .sub_part .title h1 {}
-#wrap main #review .sub_part .title p {}
-#wrap main #review .sub_part .contents {}
-#wrap main #review .sub_part .contents .r_list {}
-#wrap main #review .sub_part .contents .r_list li {}
-#wrap main #review .sub_part .contents .r_list li .rev_more {}
+#wrap main #review .sub_part .contents .r_list {
+    width: 100%;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+}
+#wrap main #review .sub_part .contents .r_list li {
+    width: 360px;
+    display: flex; flex-flow: column nowrap; gap: 8px;
+}
+#wrap main #review .sub_part .contents .r_list li .rev_more {
+    display: block; width: 100%;
+}
 #wrap main #review .sub_part .contents .r_list li .rev_more img {width:100%;}
 #wrap main #review .sub_part .contents .r_list li .rev_cont {}
-#wrap main #review .sub_part .contents .r_list li .rev_cont .rev {}
-#wrap main #review .sub_part .contents .r_list li .rev_cont .rev p {}
-#wrap main #review .sub_part .contents .r_list li .rev_cont .rev p em {}
-#wrap main #review .sub_part .contents .r_list li .rev_cont .rev p img {width:100%;}
-#wrap main #review .sub_part .contents .r_list li .rev_cont .rev p span {}
+#wrap main #review .sub_part .contents .r_list li .rev_cont .rev {
+    display: flex; flex-flow: column nowrap; gap: 3px;
+}
+#wrap main #review .sub_part .contents .r_list li .rev_cont .rev p {
+    display: flex; flex-flow: row nowrap; gap: 3px; align-items: center;
+}
+#wrap main #review .sub_part .contents .r_list li .rev_cont .rev p em {
+    font-weight: 600;
+}
+#wrap main #review .sub_part .contents .r_list li .rev_cont .rev p .star {width: 18px;}
+#wrap main #review .sub_part .contents .r_list li .rev_cont .rev p .star img {width:100%;}
+#wrap main #review .sub_part .contents .r_list li .rev_cont .rev p span {
+    font-size: 0.69rem; font-weight: 200;
+}
 #wrap main #review .sub_part .contents .r_list li .rev_cont .rev_optin {}
 #wrap main #qna .sub_part {}
 #wrap main #qna .sub_part .title {}
 #wrap main #qna .sub_part .title h1 {}
 #wrap main #qna .sub_part .title p {}
-#wrap main #qna .sub_part .contents {}
-#wrap main #qna .sub_part .contents .qna_table {}
-#wrap main #qna .sub_part .contents .qna_table dt {}
-#wrap main #qna .sub_part .contents .qna_table dt .qna_dt {}
-#wrap main #qna .sub_part .contents .qna_table dt .qna_dt li {}
+#wrap main #qna .sub_part .contents {
+    margin-top: 50px; width: 100%;
+    display: flex; flex-flow: column nowrap;
+    gap:20px;
+    justify-content: right;
+}
+#wrap main #qna .sub_part .contents .qna_table {
+    width: 100%;
+    display: flex; flex-flow: column nowrap; 
+    border-bottom: solid 2px #000;
+}
+#wrap main #qna .sub_part .contents .qna_table dt {
+    font-weight: 600;
+}
+#wrap main #qna .sub_part .contents .qna_table dt .qna_dt {
+    display: flex; flex-flow: row nowrap;
+    border-bottom: solid 2px #000;
+}
+#wrap main #qna .sub_part .contents .qna_table dt .qna_dt li {
+    font-weight: 600;
+}
 #wrap main #qna .sub_part .contents .qna_table dd {}
-#wrap main #qna .sub_part .contents .qna_table dd .qna_dd {}
+#wrap main #qna .sub_part .contents .qna_table dd .qna_dd {
+    display: flex; flex-flow: row nowrap; 
+}
 #wrap main #qna .sub_part .contents .qna_table dd .qna_dd li {}
-#wrap main #qna .sub_part .contents #write_btn {}
+#wrap main #qna .sub_part .contents .qna_table dd .qna_dd li:first-child {
+    font-weight: 600;
+}
+#wrap main #qna .sub_part .contents #write_btn {
+    color: #fff; background-color: #000;
+    width: 156px; height:45px;
+    border-radius: 10px;
+    font-size: 1.13rem; font-weight:600;
+}

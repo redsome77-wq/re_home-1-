@@ -33,7 +33,7 @@
 }
 #wrap main {}
 #wrap main .section {}
-#wrap main #new_product {}
+#wrap main #new_product {margin-top: 100px;}
 #wrap main #new_product .title {}
 #wrap main #new_product .title .title_info {}
 #wrap main #new_product .title .title_info h1 {}
@@ -142,7 +142,8 @@
     font-size: 0.88rem; font-weight:500;
 }
 #wrap main #collabo {}
-#wrap main #collabo .title {}
+#wrap main #collabo .title {
+}
 #wrap main #collabo .title .title_info {}
 #wrap main #collabo .title .title_info h1 {}
 #wrap main #collabo .title .title_info p {}
@@ -165,7 +166,6 @@
 }
 #wrap main #collabo .container .tab_contents {
     width: 100%;
-    aspect-ratio: 908 / 760; /* 원본 비율 유지 */
 }
 #wrap main #collabo .container .tab_contents .contents {
     width: 100%;
@@ -218,7 +218,9 @@
 #wrap main #lookbook .title .title_info h1 {}
 #wrap main #lookbook .title .title_info p {}
 #wrap main #lookbook .container {}
-#wrap main #lookbook .container .bigbdle {}
+#wrap main #lookbook .container .bigbdle {
+    width: 100%;
+}
 #wrap main #lookbook .container .bigbdle .pnum {
     position: relative; bottom: 50px; left: 40%;
 }
@@ -240,6 +242,7 @@
 }
 #wrap main #lookbook .container .bigbdle .pnum .prev {}
 #wrap main #lookbook .container .bigbdle .bigwrapper {
+    width: 100%;
     position: relative;
     margin-bottom: 44px;
 }
@@ -247,20 +250,19 @@
 #wrap main #lookbook .container .bigbdle .bigwrapper .slide2 {}
 #wrap main #lookbook .container .bigbdle .bigwrapper .slide3 {}
 #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide {
-    margin: 0 auto;
-    width: 100%;
     display: flex; flex-flow: row nowrap; gap:51px;
     justify-content: center;
 }
 #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .lbmain {
     display: block;
     width: 523px; height: 754px;
+    aspect-ratio: 523 / 754; /* 원본 비율 유지 */
     background-image: url(../img/looks/look_main.jpg);
     background-position: center;
     background-size: cover;
 }
 #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap {
-    width: 846px;
+    width: 100%;
 }
 #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .slide_title {
     width: 100%;
@@ -276,18 +278,15 @@
 }
 #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap  .slide_title .more_btn {}
 #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap  .slide_title .more_btn u {}
-#wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper {
-
-}
+#wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper {}
 #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper {
-    height: 583px;
+    width: 371px;
 }
 #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide {
     width: 100%;
     display: flex; flex-flow: column nowrap; gap: 8px;
 }
-#wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img {
-}
+#wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img {}
 #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img .pp_img {
     position: relative;
 }
@@ -327,6 +326,7 @@
 #wrap main #brand .container {}
 #wrap main #brand .container .swiper {
     position: relative;
+    width: 100%;
 }
 #wrap main #brand .container .swiper .swiper-wrapper {}
 #wrap main #brand .container .swiper .swiper-wrapper .swiper-slide {
@@ -370,7 +370,6 @@
 #wrap main #brand .container .swiper .swiper-wrapper .slide3 .slide_blk .b_logo {width: 402px;}
 #wrap main #brand .container .swiper .swiper-wrapper .slide2 {
     background-image:url(../img/brand/brand_02.png);
-
 }
 #wrap main #brand .container .swiper .swiper-wrapper .slide3 {
     background-image:url(../img/brand/brand_03.png);

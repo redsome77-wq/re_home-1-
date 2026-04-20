@@ -53,7 +53,7 @@
 
 /* -------------------------------------------------메인~섹션별 */
     #wrap main .section {
-        padding: 100px 80px;
+        width: 864px;
     }
     #wrap main .section .title .title_info h1 {
         font-size: 1.31rem;
@@ -141,8 +141,12 @@
     #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info p {
     font-size: 0.69rem;
 }
-#wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info .price {
+    #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info .price {
     font-size: 0.81rem;
+}
+    #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img .kidsmark {
+    top: 12%; right: 7%;
+    width: 40px; height: 40px;
 }
 
 /* -------------------------------------------------5.brand */
@@ -175,7 +179,7 @@
         gap:60px;
     }
 }
-@media screen and (max-width:402px) {
+@media screen and (max-width:750px) {
 /* -------------------------------------------------띠배너 */
     .tie_bnr {
     display: none;
@@ -227,7 +231,7 @@
 
 /* -------------------------------------------------메인~섹션별 */
     #wrap main .section {
-        padding: 50px 15px;
+        width: 372px;
     }
     #wrap main .section .title .title_info h1 {
         font-size: 0.94rem;
@@ -237,9 +241,7 @@
     }
 /* -------------------------------------------------1.new */
     #wrap main #new_product .container .product_list {
-        width:100%;
-        display: flex; flex-flow: row nowrap;
-        justify-content:space-between;
+        flex-flow: row wrap;
         gap:10px;
     }
     #wrap main #new_product .container .product_new_2 {
@@ -257,9 +259,6 @@
 /* -------------------------------------------------2.insta */
     #wrap main #insta .container .red_logo {
         display:none;
-    }
-    #wrap main #insta .container .instazone .insta_right a {
-        width: 117px; height: 117px;
     }
 /* -------------------------------------------------3.member */
     #wrap main #members_bnr {
@@ -319,8 +318,7 @@
         justify-content: center;
     }
     #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .lbmain {
-        width: 372px; height: 511px;
-        background-image: url(../img/looks/look_main_t.jpg);
+        width: 100%; height: 511px;
         margin-bottom: 5px;
     }
     #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .slide_title h2 {
@@ -330,7 +328,7 @@
         font-size: 1.0rem;
     }
     #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .slide_title {
-        margin-bottom: 0px;
+        margin-bottom: 20px;
     }
     #wrap main #lookbook .container .bigbdle .pnum {
         left: 42%; bottom:0;
@@ -340,14 +338,16 @@
     }
     #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info .price {
         font-size: 0.63rem;
-    }    
+    }
+    #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img .kidsmark {
+        top: 25%; right: 7%;
+        width: 20px; height: 20px;
+    }
 
 /* -------------------------------------------------5.brand */
-
     /* 모바일: 슬라이드 높이를 뷰포트에 맞게 줄이기 */
     #wrap main #brand .container .swiper .swiper-wrapper .swiper-slide {
         width: 100%;
-        height: 400px;   /* 모바일에 맞게 조정 */
     }
     #wrap main #brand .container .swiper .swiper-scrollbar {
         width: 335px; bottom: 37.5px;
@@ -375,7 +375,7 @@
         margin-bottom: 16px;
     }
     #wrap footer .line_zone {
-        gap:20px;
+        gap:35px;
         border-top : 0.5px solid #fff;
         border-bottom : 0.5px solid #fff;
     }

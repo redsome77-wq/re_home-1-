@@ -114,8 +114,9 @@
 #wrap main {}
 #wrap main .section {
     margin: 0 auto;
-    padding: 100px 250px;
-    width: 100%;
+    padding: 0 50px;
+    width: 1420px;
+    margin-bottom: 100px;
 }
 #wrap main .section .title {
     width: 100%;
