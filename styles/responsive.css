@@ -6,12 +6,13 @@
 
 /* -------------------------------------------------~헤더 */
     #wrap header .sub_bg {
-    height: 440px;
+    height: 440px; right: 0;
     }
     #wrap header .top_bnr .bnr_left {
     gap:10px;
     }
     #wrap header .top_bnr .bnr_left .nav {
+    display: none;
     font-size: 0.63rem; gap: 10px;
     }
     #wrap header .top_bnr .bnr_left .nav li a {
@@ -20,14 +21,19 @@
     #wrap header .top_bnr .bnr_left h1 {
     width: 111px; height: 14px;
     }
-    #wrap header .top_bnr .bnr_right a {
-    font-size: 0.63rem;
+    #wrap header .top_bnr .bnr_right {
+    display: none;
+}
+    #wrap header .top_bnr .bnr_short {
+    display: flex; align-items: center;
     }
-    #wrap header .top_bnr .bnr_right a:nth-child(1) {width: 12px; height: 12px;}
-    #wrap header .top_bnr .bnr_right a:nth-child(2) {width: 13px; height: 11px;}
-    #wrap header .top_bnr .bnr_right a:nth-child(3) {width: 14px; height: 14px;}
-    #wrap header .top_bnr .bnr_right a:nth-child(4) {width: 12px; height: 12px;}
-    #wrap header .top_bnr .bnr_right a:nth-child(5) {line-height: 1.8;}
+    #wrap header .top_bnr .bnr_short a {
+        font-size: 1.15rem;
+        height: 12px;
+    }
+    #wrap header .top_bnr .bnr_short #ham {line-height:0.7;}
+    #wrap header .top_bnr .bnr_short a:nth-child(1) {width: 12px;}
+    #wrap header .top_bnr .bnr_short a:nth-child(2) {width: 12px;}
     #wrap header .top_bnr .bnr_left .nav li .lnb_depth li .lnb_depth_2 li a {
     font-size: 0.63rem;
     }
@@ -53,7 +59,7 @@
 
 /* -------------------------------------------------메인~섹션별 */
     #wrap main .section {
-        width: 864px;
+        width: 100%;
     }
     #wrap main .section .title .title_info h1 {
         font-size: 1.31rem;
@@ -94,29 +100,43 @@
 /* -------------------------------------------------3.collabo */
     #wrap main #collabo .container .tab_title a {
         font-size: 0.94rem; 
+    }    #wrap main #collabo .container .tab_contents .contents {
+        flex-flow: column nowrap; gap:5px;
+    }
+    #wrap main #collabo .container .tab_contents .peanuts .card_imgs {
+        width: 100%;
+        display: flex; flex-flow: row nowrap;
+        justify-content: space-between;
+        gap:5px;
     }
     #wrap main #collabo .container .tab_contents .peanuts .collabo_mainlink a {
         background-image: url(../img/colla_01_t.png);
+        width: 100%;
+        aspect-ratio: 908 / 760; /* 비율 유지, width만 조정 */
     }
     #wrap main #collabo .container .tab_contents .peanuts .card_imgs .p_keyring {
-        background-image: url(../img/colla_03_t.png);
+        background-image: url(../img/colla_03_m.jpg);
     }
     #wrap main #collabo .container .tab_contents .peanuts .card_imgs .p_cp {
-        background-image: url(../img/colla_02_t.png);
+        background-image: url(../img/colla_02_m.jpg);
     }
     #wrap main #collabo .container .tab_contents .peanuts .card_imgs .p_show {
-        background-image: url(../img/colla_04_t.png);
-    }
-    #wrap main #collabo .container .tab_contents .peanuts .collabo_mainlink a {
-        width: 557px; height: 460px;
+        background-image: url(../img/colla_04_m.png);
     }
     #wrap main #collabo .container .tab_contents .peanuts .card_imgs {
-        width: 297px;
+        width: 100%;
     }
     #wrap main #collabo .container .tab_contents .peanuts .card_imgs a {
-        max-width:297px;
-    }
+        aspect-ratio: 120 / 223;
+}
 /* -------------------------------------------------4.lookbook */
+    #wrap main #lookbook {
+        padding: 0 60px;
+        padding-bottom: 50px;
+    }
+    #wrap main #lookbook .title {
+        padding-top: 50px;
+    }
     #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide {
         flex-flow: column nowrap; gap:20px;
         justify-content: center;
@@ -178,7 +198,11 @@
     #wrap footer .line_zone {
         gap:60px;
     }
+    #wrap footer address {
+        width: 650px;
+    }
 }
+
 @media screen and (max-width:750px) {
 /* -------------------------------------------------띠배너 */
     .tie_bnr {
@@ -186,10 +210,12 @@
     }
 
 /* -------------------------------------------------~헤더 */
+    #wrap header .sub_bg {
+    width: 440px; height: 100%;
+    }
     #wrap header .top_bnr {
         padding: 0 15px;
     }
-
     #wrap header .top_bnr .bnr_left .nav {
     font-size: 0.63rem; gap: 10px;
     }
@@ -199,18 +225,7 @@
     #wrap header .top_bnr .bnr_left h1 {
     width: 111px; height: 14px;
     }
-    #wrap header .top_bnr .bnr_right a {
-    font-size: 0.63rem;
-    }
-    #wrap header .top_bnr .bnr_right a:nth-child(1) {width: 12px; height: 12px;}
-    #wrap header .top_bnr .bnr_right a:nth-child(2) {width: 13px; height: 11px;}
-    #wrap header .top_bnr .bnr_right a:nth-child(3) {width: 14px; height: 14px;}
-    #wrap header .top_bnr .bnr_right a:nth-child(4) {width: 12px; height: 12px;}
-    #wrap header .top_bnr .bnr_right a:nth-child(5) {line-height: 1.8;}
-    #wrap header .top_bnr .bnr_left .nav li .lnb_depth li .lnb_depth_2 li a {
-    font-size: 0.63rem;
-    }
-
+    #wrap header .top_bnr .bnr_short a:nth-child(1) {line-height: 1.1;}
 /* -------------------------------------------------히어로배너 */
     #wrap main #hero_bnr .heroswiper .swiper-scrollbar {
         width: 304px;
@@ -231,7 +246,8 @@
 
 /* -------------------------------------------------메인~섹션별 */
     #wrap main .section {
-        width: 372px;
+        width: 100%;
+        margin-bottom: 50px;
     }
     #wrap main .section .title .title_info h1 {
         font-size: 0.94rem;
@@ -239,6 +255,7 @@
     #wrap main .section .title .title_info p {
         font-size: 0.5rem;
     }
+    
 /* -------------------------------------------------1.new */
     #wrap main #new_product .container .product_list {
         flex-flow: row wrap;
@@ -313,6 +330,7 @@
         aspect-ratio: 120 / 223;
 }
 /* -------------------------------------------------4.lookbook */
+
     #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide {
         flex-flow: column nowrap; gap:10px;
         justify-content: center;
