@@ -15,7 +15,10 @@
 }
 /* -------------------------------------------------메인~헤더 */
 #wrap {}
-#wrap header {}
+#wrap header {
+    width: 100%;
+    position: sticky; top:0; z-index: 999;
+}
 #wrap header .sub_bg {
     display: none;
     position: absolute; z-index: 800;

@@ -204,7 +204,7 @@
     }
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width:550px) {
 /* -------------------------------------------------띠배너 */
     .tie_bnr {
     display: none;
