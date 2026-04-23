@@ -3,9 +3,11 @@
     width: 100%;
     display: flex; flex-flow: row nowrap; gap:40px;
     justify-content: space-between; align-items:start;
+    padding-top: 150px;
 }
 #wrap main #salewrap .sale_imgzone {
     width: 100%;
+    max-width: 924px;
     display: flex; flex-flow: column nowrap;
     justify-content: center; align-items: center; gap:22px;
 }
@@ -39,7 +41,7 @@
     align-items: center;
 }
 #wrap main #salewrap .sale_info .prod_info .p_name_link p {
-    font-size: 1.25rem;
+    font-size: 0.88rem;
 }
 #wrap main #salewrap .sale_info .prod_info .p_name_link .share_link {
     display: inline-block;
@@ -48,7 +50,7 @@
 #wrap main #salewrap .sale_info .prod_info .p_name_link .share_link img {width:100%;}
 #wrap main #salewrap .sale_info .prod_info .p_price {
     margin-top: 10px;
-    font-size: 1.25rem; font-weight: 500;
+    font-size: 1.06rem; font-weight: 500;
 }
 #wrap main #salewrap .sale_info .opt_zone {
     margin-top: 134px;
@@ -58,20 +60,20 @@
     display: flex; flex-flow: column nowrap; gap:20px;
 }
 #wrap main #salewrap .sale_info .opt_zone .color_size .opt .btn_ul {
-    display: flex; flex-flow: row nowrap; gap:23px;
+    display: flex; flex-flow: row nowrap; gap:10px;
 }
 #wrap main #salewrap .sale_info .opt_zone .color_size .opt .btn_ul li {}
 #wrap main #salewrap .sale_info .opt_zone .color_size .opt .btn_ul li button {
-    font-size: 0.81rem; font-weight: 600;
-    width: 120px; height: 44px;
-    border: #444 solid 0.3px; border-radius: 6px;
+    font-size: 0.75rem; font-weight:400;
+    width: 80px; height: 30px;
+    border: #444 solid 0.3px; border-radius: 5px;
     background-color: #fff;
     color: #000;
 }
 #wrap main #salewrap .sale_info .opt_zone .color_size .opt .btn_ul li button.active {
-    font-size: 0.81rem; font-weight: 600;
-    width: 120px; height: 44px;
-    border-radius: 6px;
+    font-size: 0.75rem; font-weight:400;
+    width: 80px; height: 30px;
+    border-radius: 5px;
     border: none; 
     background-color: #E72819;
     color: #fff;

@@ -214,18 +214,18 @@ header .m_bg .m_side_wrap .user_menu {
 #wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .m_nav .nav > li > .lnb_depth .event_row span {margin-left: 3px;}
 #wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .m_nav .nav > li > .lnb_depth .event_row span img {width: 100%;}
 #wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .m_nav .nav > li > .lnb_depth > li > a {
-    font-size: 0.81rem; font-weight: 300; line-height: 1.5;
+    font-size: 0.95rem; font-weight: 300; line-height: 1.5;
     width: max-content;
     justify-content:flex-end;
 }
 #wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .m_nav .nav > li > .lnb_depth > li .lnb_depth_2 {
-    margin: 5px 0 0 20px;
+    margin: 5px 0 0 10px;
 }
 #wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .m_nav .nav > li > .lnb_depth > li .lnb_depth_2 > li {
     display: flex;  flex-flow: row nowrap; align-items:flex-start;
 }
 #wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .m_nav .nav > li > .lnb_depth > li .lnb_depth_2 > li > a {
-    font-size: 0.69rem; font-weight: 300; line-height: 1.5;
+    font-size: 0.85rem; font-weight: 300; line-height: 1.5;
     width: 100%;
     justify-content: flex-start;
 }
