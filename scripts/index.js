@@ -20,6 +20,11 @@ const heroSwiper = new Swiper(heroBnr, {
         el: ".heroswiper .swiper-scrollbar",
         hide: false,
     },
+    autoplay:{
+    delay:2000,
+    pauseOnMouseEnter:true,
+    disableOnInteraction:false,
+    }
 });
 
 const lookBigSwiper = new Swiper(lookbookBig, {
@@ -39,6 +44,11 @@ const lookBigSwiper = new Swiper(lookbookBig, {
 for(let i=0; i<3; i++){
     const lookSwiper = new Swiper(lookbookZone[i], {
         loop:true,
+        autoplay:{
+            delay:2500,
+            pauseOnMouseEnter:true,
+            disableOnInteraction:false,
+        },
         slidesPerView: 2,
         spaceBetween: 17,
         scrollbar: {
@@ -58,6 +68,11 @@ for(let i=0; i<3; i++){
 
 const brandSwiper = new Swiper(brandZone, {
     loop:true,
+    autoplay:{
+    delay:1500,
+    pauseOnMouseEnter:true,
+    disableOnInteraction:false,
+    },
     slidesPerView: 1,
     spaceBetween: 10,
     scrollbar: {
