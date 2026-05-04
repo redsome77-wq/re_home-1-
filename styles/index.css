@@ -82,9 +82,9 @@
 #wrap main #insta .title .more_btn {}
 #wrap main #insta .title .more_btn u {}
 #wrap main #insta .container {
+    width: 100%;
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
-    gap:26px;
 }
 #wrap main #insta .container .red_logo {
     width: calc(100% - 500px);
@@ -106,10 +106,11 @@
     width: 100%;
     display: block;
     position: relative;
+    outline: 3px transparent solid;
+    transition: 0.1s outline-color;
 }
 #wrap main #insta .container .instazone .insta_right a:hover {
-    border: #E72819 solid 3px;
-    transition: all 0.1s;
+    outline: #E72819 solid 3px;
 }
 #wrap main #insta .container .instazone .insta_right a:hover .ins_hum {
     display: none;
